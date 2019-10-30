@@ -2,8 +2,10 @@
 #include "graf_ponderat.h"
 #include "list.h"
 #include "muchie_pon.h"
+#include "vectorGraf.h"
 
 int main(){
+    vectorGraf vector;
     Graf_ponderat graf, graf1, graf2;
     int flag = 1, optiune, nod, nod_i, nod_f;
     while(flag){
@@ -16,7 +18,7 @@ int main(){
         std::cout << "7. Verificare daca graful este conex" << std::endl;
         std::cout << "8. Determinarea nodurilor intermediare de pe un drum de pondere minima" << std::endl;
         std::cout << "9. Inmultirea a doua grafuri" << std::endl;
-        std::cout << "10. (in lucru)" << std::endl;
+        std::cout << "10. Creaza un vector de grafuri ponderate" << std::endl;
         std::cout << "11. Exit" << std::endl;
         std::cin >> optiune;
         switch (optiune){
@@ -79,7 +81,9 @@ int main(){
                 std::cout << graf2;
             break;
             case 10:
-            
+                std::cout << "Se va citi un numarul de grafuri ce doresc a fi stocate" << std::endl;
+                std::cin >> vector;
+                std::cout << vector;
             break;
             case 11:
                 flag = 0;
