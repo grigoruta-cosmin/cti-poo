@@ -31,3 +31,9 @@ grafuri ponderate avand aceeasi multime de noduri, graful ponderat cu aceeasi
 multime de noduri ca si acele doua grafuri, si cu multimea muchiilor egala cu
 intersectia multimilor muchiilor celor doua grafuri, cu fiecare muchie avand ca pondere
 minimul dintre ponderile muchiilor corespunzatoare din acele doua grafuri :heavy_check_mark:
+
+### Utilizare
+
+`g++ main.cpp graf_ponderat.cpp muchie_pon.cpp list.cpp vectorGraf.cpp -o main`
+`./main`
+
